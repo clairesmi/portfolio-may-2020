@@ -171,8 +171,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background: url('./css/snapcat.png');
-  background-color: black;
+  background-color: #272838;
   font-family: 'Jost', sans-serif;
   font-size: 17px;
   color: whitesmoke;
@@ -184,12 +183,13 @@ html {
 }
 .detail-text {
   height: 100%;
-  border: solid black 2px;
+  /* border: solid black 2px; */
   cursor: pointer;
 }
 .links-wrapper {
   display: flex;
   flex-direction: row;
+  font-family: 'Permanent Marker', cursive;
   padding-top: 10px;
   justify-content: space-between;
   align-items: center;
@@ -328,4 +328,94 @@ html {
   
 }
 
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 750px) {
+  .page-wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding-top: 20px;
+  /* border: solid black 1px; */
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100vh;
+  width: 25vw;
+  padding: 20px 0px 0px 30px;
+  /* border-right: dotted gray 1px; */
+  margin: 10px 0px;
+}
+.name {
+  color: #8661C1;
+  font-family: 'Jost', sans-serif;
+  font-size: 60px;
+  text-align: right;
+}
+.dev-title {
+  color: #272838;
+  font-family: 'Jost', sans-serif;
+  font-size: 35px;
+  text-align: right;
+}
+.about {
+  text-align: right;
+  color: #272838;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  /* padding-top: 20px; */
+}
+.contact-logos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  color: #272838;
+  font-size: 50px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  /* margin-left: 290px; */
+}
+.contact-hover:hover {
+  transform: scale(1.2)
+}
+.linkedin-logo {
+  color: #272838;
+  height: 50px;
+  width: 50px;
+  margin: 0px 15px;
+  opacity: 0.8;
+}
+.email-icon {
+  color: #272838;
+  height: 50px;
+  width: 50px;
+  margin: 0px 15px;
+  opacity: 0.8;
+}
+
+.devicon-github-plain {
+  color: #272838;
+  height: 50px;
+  width: 50px;
+  margin: 0px 15px;
+  opacity: 0.8;
+  }
+.main-content {
+display: none;
+  }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* border: solid green 1px; */
+  overflow: scroll;
+  /* z-index: -1; */
+  /* padding-top: 20px; */
+  }
+}
