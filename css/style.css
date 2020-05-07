@@ -1,0 +1,331 @@
+/* phone would be name, small desscription, tech, links */
+/* iPad - change direction of the projects to vertical scroll */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+html {
+  /* background: #FEFCFB;  */
+  background: #F9F8F8;
+}
+
+.page-wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding-top: 20px;
+  /* border: solid black 1px; */
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100vh;
+  width: 25vw;
+  padding: 20px 0px 0px 30px;
+  /* border-right: dotted gray 1px; */
+  margin: 10px 0px;
+}
+.name {
+  color: #8661C1;
+  font-family: 'Jost', sans-serif;
+  font-size: 60px;
+  text-align: right;
+}
+.dev-title {
+  color: #272838;
+  font-family: 'Jost', sans-serif;
+  font-size: 35px;
+  text-align: right;
+}
+.about {
+  text-align: right;
+  color: #272838;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  /* padding-top: 20px; */
+}
+.contact-logos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  color: #272838;
+  font-size: 50px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  /* margin-left: 290px; */
+}
+.contact-hover:hover {
+  transform: scale(1.2)
+}
+.linkedin-logo {
+  color: #272838;
+  height: 50px;
+  width: 50px;
+  margin: 0px 15px;
+  opacity: 0.8;
+}
+.email-icon {
+  color: #272838;
+  height: 50px;
+  width: 50px;
+  margin: 0px 15px;
+  opacity: 0.8;
+}
+
+.devicon-github-plain {
+  color: #272838;
+  height: 50px;
+  width: 50px;
+  margin: 0px 15px;
+  opacity: 0.8;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 75vw;
+  /* border: solid red 1px; */
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* border: solid green 1px; */
+  overflow: scroll;
+  /* z-index: -1; */
+  /* padding-top: 20px; */
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  height: 73vh;
+  width: 43.5%;
+  background-color: white;
+  border: solid lightgrey 1px;
+  box-shadow: 2px 2px 20px 2px lightgrey;
+  margin: 20px 10px;
+  padding: 0px 10px 0px 10px;
+  /* transform: rotate(5deg); */
+}
+.pre-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80%;
+  width: 95%;
+  padding-top: 40px;
+  /* margin: 10px 0px; */
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  margin-top: 20px;
+  padding: 7px 7px 0px;
+  background-image: linear-gradient(
+    to bottom right, 
+    rgb(199, 198, 198) 45%,
+    whitesmoke 60%,
+    rgb(199, 198, 198) 85%
+  );
+}
+.project-image {
+  height: 30vh;
+  width: 100%;
+  cursor: pointer;
+}
+.icon-wrapper {
+  display: flex;
+  height: 15vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 20px; */
+}
+.scroll-projects {
+  height: 80px;
+  width: 80px;
+  z-index: 2;
+}
+.show-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: url('./css/snapcat.png');
+  background-color: black;
+  font-family: 'Jost', sans-serif;
+  font-size: 17px;
+  color: whitesmoke;
+  width: 95%;
+  height: 70%;
+  margin-top: 10px;
+  padding: 50px;
+  opacity: 1;
+}
+.detail-text {
+  height: 100%;
+  border: solid black 2px;
+  cursor: pointer;
+}
+.links-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  color: whitesmoke;
+  font-size: 110%;
+}
+.tech {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+  border: solid purple 1px;
+}
+.tech-logos {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  font-size: 45px;
+  color: gray;
+}
+.project-title {
+  display: flex;
+  padding-top: 30px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+}
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .page-wrapper {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100vw;
+    border-right: solid blue 1px;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+  }
+  .about {
+    padding: 0px 20px; 
+    font-size: 18px;
+  }
+  .name {
+    padding-right: 20px;
+  }
+  .dev-title {
+    padding-right: 20px;
+  }
+  .main-content {
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    /* border: solid red 1px; */
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    width: 100%;
+    margin: 0px 20px;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 65vh;
+    width: 70vw;
+    background-color: white;
+    border: solid lightgrey 1px;
+    box-shadow: 2px 2px 20px 2px lightgrey;
+    margin: 10px 20px;
+    padding: 0px 10px;
+  }
+  .contact-logos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #272838;
+    font-size: 50px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    /* margin-left: 290px; */
+  }
+  .contact-hover:hover {
+    transform: scale(1.2)
+  }
+  .linkedin-logo {
+    color: #272838;
+    height: 40px;
+    width: 40px;
+    margin: 0px 15px;
+    opacity: 0.8;
+  }
+  .email-icon {
+    color: #272838;
+    height: 40px;
+    width: 40px;
+    margin: 0px 15px;
+    opacity: 0.8;
+  }
+  .devicon-github-plain {
+    color: #272838;
+    height: 40px;
+    width: 40px;
+    margin: 0px 15px;
+    opacity: 0.8;
+  }
+  
+}
+
+@media only screen and (max-width: 640px) {}
