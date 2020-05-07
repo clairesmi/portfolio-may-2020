@@ -24,25 +24,26 @@ function init() {
       setTimeout(() => {
         project.forEach(el => el.classList.remove('animated', 'flipInY'))
       }, 700)
-      timer = setTimeout(flipCard, 15000)
+      // timer = setTimeout(function() {
+      //   flipCard(id)
+      // }, 5000)
     }
     
-    function flipCard() {
-      project[id].classList.add('animated', 'flipInY')
-      project[id].classList.remove('show-detail')
-      project[id].children[0].classList.add('hidden')
-      project[id].children[1].classList.remove('hidden')
-      
-      setTimeout(() => {
-        project.forEach(el => el.classList.remove('animated', 'flipInY'))
-      }, 700)
-    }
+    // function flipCard(id) {
+    //   project[id].classList.add('animated', 'flipInY')
+    //   project[id].classList.remove('show-detail')
+    //   project[id].children[0].classList.add('hidden')
+    //   project[id].children[1].classList.remove('hidden')
+    //   setTimeout(() => {
+    //     project.forEach(el => el.classList.remove('animated', 'flipInY'))
+    //   }, 700)
+    // }
   }
   
   function handleResetCard() {
-    clearTimeout(timer)
-    const id = event.target.classList[1]
     if (event.target.classList.contains('detail-text')) {
+      clearTimeout(timer)
+      const id = event.target.classList[1]
       project[id].classList.add('animated', 'flipInY')
       project[id].classList.remove('show-detail')
       project[id].children[0].classList.add('hidden')
