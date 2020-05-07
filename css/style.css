@@ -265,7 +265,6 @@ html {
     display: flex;
     height: 100%;
     width: 100vw;
-    /* border: solid red 1px; */
   }
   .projects {
     display: flex;
@@ -329,77 +328,73 @@ html {
 
 @media only screen and (max-width: 750px) {
   .page-wrapper {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  padding-top: 20px;
-  /* border: solid black 1px; */
-}
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
-  height: 95vh;
-  width: 100vw;
-  margin: 10px 0px;
-}
-.name {
-  color: #8661C1;
-  font-family: 'Jost', sans-serif;
-  font-size: 60px;
-  text-align: right;
-}
-.dev-title {
-  color: #272838;
-  font-family: 'Jost', sans-serif;
-  font-size: 35px;
-  text-align: right;
-}
-.about {
-  text-align: right;
-  color: #272838;
-  font-family: 'Jost', sans-serif;
-  font-size: 20px;
-  /* padding-top: 20px; */
-}
-.contact-logos {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  color: #272838;
-  font-size: 50px;
-  padding-top: 10px;
-  margin-bottom: 5px;
-  /* margin-left: 290px; */
-}
-.contact-hover:hover {
-  transform: scale(1.2)
-}
-.linkedin-logo {
-  color: #272838;
-  height: 50px;
-  width: 50px;
-  margin: 0px 15px;
-  opacity: 0.8;
-}
-.email-icon {
-  color: #272838;
-  height: 50px;
-  width: 50px;
-  margin: 0px 15px;
-  opacity: 0.8;
-}
-
-.devicon-github-plain {
-  color: #272838;
-  height: 50px;
-  width: 50px;
-  margin: 0px 15px;
-  opacity: 0.8;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding-top: 10px;
   }
-.main-content {
-display: none;
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 95vh;
+    width: 100vw;
+    margin: 10px 0px;
   }
+  .name {
+    color: #8661C1;
+    font-family: 'Jost', sans-serif;
+    font-size: 60px;
+    text-align: right;
+  }
+  .dev-title {
+    color: #272838;
+    font-family: 'Jost', sans-serif;
+    font-size: 35px;
+    text-align: right;
+  }
+  .about {
+    text-align: right;
+    color: #272838;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+  }
+  .contact-logos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: #272838;
+    font-size: 50px;
+    padding-top: 10px;
+    /* margin-bottom: 5px; */
+  }
+  .contact-hover:hover {
+    transform: scale(1.2)
+  }
+  .linkedin-logo {
+    color: #272838;
+    height: 50px;
+    width: 50px;
+    margin: 0px 15px;
+    opacity: 0.8;
+  }
+  .email-icon {
+    color: #272838;
+    height: 50px;
+    width: 50px;
+    margin: 0px 15px;
+    opacity: 0.8;
+  }
+  .devicon-github-plain {
+    color: #272838;
+    height: 50px;
+    width: 50px;
+    margin: 0px 15px;
+    opacity: 0.8;
+    }
+  .main-content {
+  display: none;
+    }
 }
