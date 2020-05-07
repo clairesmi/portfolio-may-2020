@@ -56,7 +56,7 @@ html {
   background: #F9F8F8;
 }
 .contact-hover:hover {
-  transform: scale(1.2)
+  transform: scale(1.1)
 }
 .linkedin-logo {
   color: #272838;
@@ -109,7 +109,6 @@ html {
   margin: 20px 10px;
   padding: 0px 10px 0px 10px;
   color: black;
-  /* transform: rotate(5deg); */
 }
 .pre-hover {
   display: flex;
@@ -177,7 +176,6 @@ html {
 }
 .detail-text {
   height: 100%;
-  /* border: solid black 2px; */
   cursor: pointer;
 }
 .links-wrapper {
@@ -196,6 +194,9 @@ html {
   width: 45%;
   color: whitesmoke;
   font-size: 110%;
+}
+.link:hover {
+  transform: scale(1.1)
 }
 .tech {
   display: flex;
@@ -294,7 +295,7 @@ html {
     /* margin-left: 290px; */
   }
   .contact-hover:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
   }
   .linkedin-logo {
     color: #272838;
@@ -365,7 +366,7 @@ html {
     /* margin-bottom: 5px; */
   }
   .contact-hover:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
   }
   .linkedin-logo {
     color: #272838;
