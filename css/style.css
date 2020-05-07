@@ -109,6 +109,7 @@ html {
   box-shadow: 2px 2px 20px 2px lightgrey;
   margin: 20px 10px;
   padding: 0px 10px 0px 10px;
+  color: black;
   /* transform: rotate(5deg); */
 }
 .pre-hover {
@@ -229,7 +230,7 @@ html {
   display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-device-width: 1000px) {
   .page-wrapper {
     display: flex;
     flex-direction: column; 
@@ -320,7 +321,7 @@ html {
   
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-device-width: 750px) {
   .page-wrapper {
     display: flex;
     height: 100vh;
