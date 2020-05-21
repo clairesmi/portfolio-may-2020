@@ -7,6 +7,7 @@
 }
 html {
   background: #F9F8F8;
+  scroll-behavior: smooth;
 }
 
 .page-wrapper {
