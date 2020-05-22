@@ -24,7 +24,7 @@ html {
   align-items: flex-end;
   height: 100vh;
   width: 25vw;
-  padding: 20px 0px 0px 30px;
+  padding: 20px 10px 0px 30px;
   margin: 10px 0px;
 }
 .name {
@@ -95,6 +95,7 @@ html {
   height: 100vh;
   width: 100%;
   overflow: scroll;
+  overflow-x: hidden;
 
 }
 .project {
