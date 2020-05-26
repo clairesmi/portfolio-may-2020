@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+[data-theme="dark"] {
+  background-color: #272838;
+}
+
 .page-wrapper {
   display: flex;
   height: 100vh;
@@ -24,8 +28,15 @@ html {
   align-items: flex-end;
   height: 100vh;
   width: 25vw;
-  padding: 20px 10px 0px 30px;
+  padding: 0px 10px 0px 30px;
   margin: 10px 0px;
+}
+.mode {
+  align-self: flex-end;
+  margin-right: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Permanent Marker', cursive;
 }
 .name {
   color: #8661C1;
@@ -50,24 +61,21 @@ html {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  color: #272838;
   font-size: 50px;
   padding-top: 10px;
   margin-bottom: 5px;
-  background: #F9F8F8;
+  color: black;
 }
 .contact-hover:hover {
   transform: scale(1.1)
 }
 .linkedin-logo {
-  color: #272838;
   height: 50px;
   width: 50px;
   margin: 0px 15px;
   opacity: 0.8;
 }
 .email-icon {
-  color: #272838;
   height: 50px;
   width: 50px;
   margin: 0px 15px;
@@ -75,11 +83,11 @@ html {
 }
 
 .devicon-github-plain-wordmark {
-  color: #272838;
+  color: black;
   height: 50px;
   width: 50px;
   margin: 0px 15px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .main-content {
   display: flex;
@@ -105,9 +113,9 @@ html {
   align-items: center; 
   height: 73vh;
   width: 43.5%;
-  background-color: white;
+  background-color: rgb(245, 245, 240);
   border: solid lightgrey 1px;
-  box-shadow: 2px 2px 20px 2px lightgrey;
+  box-shadow: 2px 2px 15px 1px lightgrey;
   margin: 20px 10px;
   padding: 0px 10px 0px 10px;
   color: black;
@@ -159,7 +167,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(245, 245, 240);
 }
 .detail {
   display: flex;
@@ -248,6 +256,9 @@ html {
     padding: 10px 0px 0px 0px;
     margin: 0px;
   }
+  .mode {
+    display: none;
+  }
   .about {
     padding: 0px 20px; 
     font-size: 18px;
@@ -272,6 +283,7 @@ html {
     height: 65vh;
     width: 100%;
     margin: 0px 20px;
+    overflow: scroll;
   }
   .project {
     display: flex;
@@ -338,6 +350,9 @@ html {
     height: 95vh;
     width: 100vw;
     margin: 10px 0px;
+  }
+  .mode {
+    display: none;
   }
   .name {
     color: #8661C1;
