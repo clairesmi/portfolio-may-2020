@@ -4,6 +4,7 @@ function init() {
   const project = document.querySelectorAll('.project')
   const image = document.querySelectorAll('.project-image')
   const detail = document.querySelectorAll('.detail-text')
+  const detailBackground = document.querySelectorAll('.detail')
   const detailText = document.createElement('div')
   const about = document.querySelector('.about')
   const name = document.querySelector('.name')
@@ -24,8 +25,9 @@ function init() {
       about.style.color = '#F9F8F8'
       name.style.color = '#3CBBB1'
       devTitle.style.color = 'black'
-      project.forEach(el => el.style.boxShadow = '0px 0px 0px 0px')
       contactLogos.style.opacity = '1'
+      project.forEach(el => el.style.boxShadow = '0px 0px 0px 0px')
+      detailBackground.forEach(el => el.style.backgroundColor = '#141414')
       // style mode button
     } else {
       html.dataset.theme = 'light'
@@ -34,6 +36,7 @@ function init() {
       name.style.color = '#8661C1'
       devTitle.style.color = '#272838'
       project.forEach(el => el.style.boxShadow = '2px 2px 15px 1px lightgrey')
+      detailBackground.forEach(el => el.style.backgroundColor = '#272838')
       // style mode button
     }
     mode.addEventListener('click', toggleMode)
@@ -47,6 +50,7 @@ function init() {
       about.style.color = '#F9F8F8'
       name.style.color = '#3CBBB1'
       devTitle.style.color = 'black'
+      detailBackground.forEach(el => el.style.backgroundColor = '#141414')
       project.forEach(el => el.style.boxShadow = '0px 0px 0px 0px')
     } else {
       html.dataset.theme = 'light'
@@ -55,6 +59,7 @@ function init() {
       about.style.color = '#272838'
       name.style.color = '#8661C1'
       devTitle.style.color = '#272838'
+      detailBackground.forEach(el => el.style.backgroundColor = '#272838')
       project.forEach(el => el.style.boxShadow = '2px 2px 15px 1px lightgrey')
     }
   }
