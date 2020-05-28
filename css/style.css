@@ -16,7 +16,7 @@
 html {
   background: #F9F8F8;
   scroll-behavior: smooth;
-  font-size: 30px
+  font-size: 62.5%;
 }
 
 [data-theme="dark"] {
@@ -57,26 +57,27 @@ html {
       align-self: flex-end;
   margin-right: 50px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 2rem;
   font-family: 'Permanent Marker', cursive;
 }
 .name {
   color: #8661C1;
   font-family: 'Jost', sans-serif;
-  font-size: 1.9rem;
+  font-size: 5.8rem;
   text-align: right;
 }
+
 .dev-title {
   color: #272838;
   font-family: 'Jost', sans-serif;
-  font-size: 1.1rem;
+  font-size: 3rem;
   text-align: right;
 }
 .about {
   text-align: right;
   color: #272838;
   font-family: 'Jost', sans-serif;
-  font-size: 0.7rem;
+  font-size: 2.1rem;
 }
 .contact-logos {
   display: -webkit-box;
@@ -279,7 +280,7 @@ html {
           align-items: flex-start;
   background-color: #272838;
   font-family: 'Jost', sans-serif;
-  font-size: 0.6rem;
+  font-size: 1.7rem;
   color: whitesmoke;
   width: 95%;
   height: 70%;
@@ -321,7 +322,7 @@ html {
           align-items: center;
   width: 45%;
   color: whitesmoke;
-  font-size: 0.7rem;
+  font-size: 2rem;
 }
 .link:hover {
   -webkit-transform: scale(1.1);
@@ -369,7 +370,7 @@ html {
   display: flex;
   padding-top: 30px;
   font-family: 'Permanent Marker', cursive;
-  font-size: 0.95rem;
+  font-size: 2.9rem;
 }
 .hidden {
   display: none;
@@ -406,7 +407,7 @@ html {
   }
   .about {
     padding: 0px 20px; 
-    font-size: 0.7rem;
+    font-size: 2.1rem;
   }
   .name {
     padding-right: 20px;
@@ -557,7 +558,7 @@ html {
     text-align: right;
     color: #272838;
     font-family: 'Jost', sans-serif;
-    font-size: 0.8rem;
+    font-size: 2.1rem;
   }
   .contact-logos {
     display: -webkit-box;
