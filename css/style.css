@@ -1,12 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/* phone would be name, small desscription, tech, links */
-/* iPad - change direction of the projects to vertical scroll */
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Permanent+Marker&display=swap');
 
 * {
   box-sizing: border-box;
