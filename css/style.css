@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Permanent+Marker&display=swap');
-
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0px;
 }
 html {
   background: #F9F8F8;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 [data-theme="dark"] {
@@ -14,59 +21,80 @@ html {
 }
 
 .page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
   /* border: solid black 1px; */
 }
 .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   height: 100vh;
   width: 25vw;
   padding: 0px 10px 0px 30px;
   margin: 10px 0px;
 }
 .mode {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-right: 50px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 2rem;
   font-family: 'Permanent Marker', cursive;
 }
 .name {
   color: #8661C1;
   font-family: 'Jost', sans-serif;
-  font-size: 60px;
+  font-size: 5.8rem;
   text-align: right;
 }
+
 .dev-title {
   color: #272838;
   font-family: 'Jost', sans-serif;
-  font-size: 35px;
+  font-size: 3rem;
   text-align: right;
 }
 .about {
   text-align: right;
   color: #272838;
   font-family: 'Jost', sans-serif;
-  font-size: 20px;
+  font-size: 2.1rem;
 }
 .contact-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 50px;
   padding-top: 10px;
   margin-bottom: 5px;
   color: black;
 }
 .contact-hover:hover {
-  transform: scale(1.1)
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1)
 }
 .linkedin-logo {
   height: 50px;
@@ -89,16 +117,28 @@ html {
   opacity: 0.8;
 }
 .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   width: 75vw;
 }
 .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   width: 100%;
   overflow: scroll;
@@ -106,37 +146,78 @@ html {
 
 }
 .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; 
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; 
   height: 73vh;
   width: 43.5%;
   background-color: rgb(245, 245, 240);
   border: solid lightgrey 1px;
-  box-shadow: 2px 2px 15px 1px lightgrey;
+  -webkit-box-shadow: 2px 2px 15px 1px lightgrey;
+          box-shadow: 2px 2px 15px 1px lightgrey;
   margin: 20px 10px;
   padding: 0px 10px 0px 10px;
   color: black;
 }
 .pre-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 80%;
   width: 95%;
   padding-top: 40px;
   /* margin: 10px 0px; */
 }
 .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 50vh;
   margin-top: 20px;
   padding: 7px 7px 0px;
+  background-image: -webkit-gradient(
+    linear, 
+    left top, right bottom, 
+    color-stop(45%, rgb(199, 198, 198)),
+    color-stop(60%, whitesmoke),
+    color-stop(85%, rgb(199, 198, 198))
+  );
+  background-image: -o-linear-gradient(
+    top left, 
+    rgb(199, 198, 198) 45%,
+    whitesmoke 60%,
+    rgb(199, 198, 198) 85%
+  );
   background-image: linear-gradient(
     to bottom right, 
     rgb(199, 198, 198) 45%,
@@ -150,11 +231,17 @@ html {
   cursor: pointer;
 }
 .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 15vh;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* padding-top: 20px; */
 }
 .scroll-projects {
@@ -163,19 +250,34 @@ html {
   z-index: 2;
 }
 .show-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgb(245, 245, 240);
 }
 .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #272838;
   font-family: 'Jost', sans-serif;
-  font-size: 17px;
+  font-size: 1.7rem;
   color: whitesmoke;
   width: 95%;
   height: 70%;
@@ -188,41 +290,71 @@ html {
   cursor: pointer;
 }
 .links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-family: 'Permanent Marker', cursive;
   padding-top: 10px;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 45%;
   color: whitesmoke;
-  font-size: 110%;
+  font-size: 2rem;
 }
 .link:hover {
-  transform: scale(1.1)
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1)
 }
 .tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 40%;
   width: 100%;
   border: solid purple 1px;
 }
 .tech-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
   width: 100%;
 }
 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   width: 100%;
   margin: 10px;
@@ -230,10 +362,12 @@ html {
   color: gray;
 }
 .project-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
   font-family: 'Permanent Marker', cursive;
-  font-size: 30px;
+  font-size: 2.9rem;
 }
 .hidden {
   display: none;
@@ -241,15 +375,25 @@ html {
 
 @media only screen and (max-width: 1000px) {
   .page-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
     height: 100vh;
     width: 100vw;
     padding: 10px;
   }
   .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 40vh;
     width: 100vw;
     padding: 10px 0px 0px 0px;
@@ -260,7 +404,7 @@ html {
   }
   .about {
     padding: 0px 20px; 
-    font-size: 18px;
+    font-size: 2.1rem;
   }
   .name {
     padding-right: 20px;
@@ -269,38 +413,66 @@ html {
     padding-right: 20px;
   }
   .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
     width: 100vw;
   }
   .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 65vh;
     width: 100%;
     margin: 0px 20px;
     overflow: scroll;
   }
   .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     height: 65vh;
     width: 70vw;
     background-color: white;
     border: solid lightgrey 1px;
-    box-shadow: 2px 2px 20px 2px lightgrey;
+    -webkit-box-shadow: 2px 2px 20px 2px lightgrey;
+            box-shadow: 2px 2px 20px 2px lightgrey;
     margin: 10px 20px;
     padding: 0px 10px;
   }
   .contact-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #272838;
     font-size: 50px;
     padding-top: 20px;
@@ -308,7 +480,9 @@ html {
     /* margin-left: 290px; */
   }
   .contact-hover:hover {
-    transform: scale(1.1)
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1)
   }
   .linkedin-logo {
     color: #272838;
@@ -336,16 +510,28 @@ html {
 
 @media only screen and (max-width: 750px) {
   .page-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100vh;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 10px;
   }
   .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     height: 95vh;
     width: 100vw;
     margin: 10px 0px;
@@ -356,33 +542,40 @@ html {
   .name {
     color: #8661C1;
     font-family: 'Jost', sans-serif;
-    font-size: 60px;
+    font-size: 1.9rem;
     text-align: right;
   }
   .dev-title {
     color: #272838;
     font-family: 'Jost', sans-serif;
-    font-size: 35px;
+    font-size: 1.1rem;
     text-align: right;
   }
   .about {
     text-align: right;
     color: #272838;
     font-family: 'Jost', sans-serif;
-    font-size: 20px;
+    font-size: 2.1rem;
   }
   .contact-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #272838;
     font-size: 50px;
     padding-top: 10px;
     /* margin-bottom: 5px; */
   }
   .contact-hover:hover {
-    transform: scale(1.1)
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1)
   }
   .linkedin-logo {
     color: #272838;
